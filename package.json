@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "gen": "gulp generate",
-    "start": "yarn run build && yarn run serve",
-    "build": "gulp build && yarn run build:functions",
+    "start": "npm run build && npm run serve",
+    "build": "gulp build && npm run build:functions",
     "build:local": "gulp build:local",
     "build:functions": "netlify-lambda build src/lambda",
     "serve": "gulp watch & gulp serve & netlify-lambda serve src/lambda"
